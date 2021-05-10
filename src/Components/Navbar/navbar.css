@@ -1,0 +1,43 @@
+.c-navbar {
+    display: flex;
+    min-height: 2rem;
+    background: hsl(195, 60%, 20%);
+    color: hsla(0, 0%, 98%, 1);
+}
+
+.c-navbar__logo {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem 0 1rem;
+    --navbar-logo-hue-saturation: 200deg, 60%;
+    --navbar-logo-lightness: 30%;
+    --navbar-logo-bg: hsl(var(--navbar-logo-hue-saturation), var(--navbar-logo-lightness), 1);
+    border-right: 0.07em solid var(--navbar-logo-bg);
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.c-navbar__logo:hover {
+    background: var(--navbar-logo-bg);
+}
+
+.c-navbar__logo:active {
+    background: hsl(var(--navbar-logo-hue-saturation), 17%, 1);
+}
+
+.c-navbar__menu {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.c-navbar__menu-item {
+    margin-right: 1.5rem;
+}
+
+.c-navbar__menu-link {}
+
+.c-navbar__menu-link:hover {}
+
+.c-navbar__menu-link.active {
+    border-bottom: 0.12em solid;
+}

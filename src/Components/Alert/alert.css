@@ -1,0 +1,54 @@
+.o-alert {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: min(100%, 40rem);
+    margin: 0 auto;
+    border-radius: 0.11rem;
+    --background-hue: 0;
+    --background-saturation: 50%;
+    --background-lightness: 99%;
+    --background-alpha: 1;
+    background: hsla(var(--background-hue), var(--background-saturation), var(--background-lightness), var(--background-alpha));
+    --color-saturation: 50%;
+    --color-lightness: 20%;
+    --color-alpha: 1;
+    color: hsla(var(--background-hue), var(--color-saturation), var(--color-lightness), var(--color-alpha))
+}
+
+.o-alert--error {
+    --background-lightness: 80%;
+}
+
+.o-alert--warning {
+    --background-hue: 50;
+    --background-lightness: 80%;
+}
+
+.o-alert--success {
+    --background-hue: 100;
+    --background-lightness: 80%;
+}
+
+.o-alert__content {
+    display: flex;
+    align-items: baseline;
+    padding: 0.1rem 0.7rem;
+}
+
+.o-alert__title {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.o-alert__message {}
+
+.o-alert__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.c-category-list__item {
+    display: flex;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.07em;
+    background: var(--primary-color-light);
+    color: var(--primary-body-bg-color);
+    cursor: pointer;
+}
+
+.c-category-list__item.is-active, .c-category-list__item:focus {
+    background: var(--primary-color);
+}
+
+.c-category-list__item:focus {
+    outline: 0.1em solid var(--primary-color);
+    outline-offset: 0.05em;
+}
+
+.c-category-list__name {}
